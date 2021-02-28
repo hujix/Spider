@@ -18,7 +18,7 @@ print(proxy)
 path = './Desktop/'
 
 
-class PPX():  # 皮皮虾
+class PPX:  # 皮皮虾
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ''Chrome/81.0.4044.138 Safari/537.36 Edg/81.0.416.72 '
     }
@@ -79,7 +79,7 @@ class PpxNew:  # 皮皮虾
         print("【皮皮虾】: {}.mp4 无水印视频下载完成！".format(video_name))
 
 
-class PPGX():  # 皮皮搞笑
+class PPGX:  # 皮皮搞笑
     def __init__(self, url):
         s_url = url
         self.headers = {
@@ -109,7 +109,7 @@ class PPGX():  # 皮皮搞笑
         print("【皮皮搞笑】: {}.mp4 无水印视频下载完成！".format(video_name))
 
 
-class DY():  # 抖音
+class DY:  # 抖音
     headers = {  # 模拟手机端
         'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 Edg/84.0.4147.105'
     }
@@ -142,7 +142,7 @@ class DY():  # 抖音
             print("douyin")
 
 
-class TXWS():  # 腾讯微视
+class TXWS:  # 腾讯微视
     headers = {  # 模拟手机端
         'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 Edg/84.0.4147.105'
     }
@@ -171,7 +171,7 @@ class TXWS():  # 腾讯微视
         print("【腾讯微视】: {}.mp4 无水印视频下载完成！".format(video_name))
 
 
-class KY_Eyepetizer():  # 开眼
+class KY_Eyepetizer:  # 开眼
     def __init__(self, url):
         self.vid = str(url).split('=')[1].split('&')[0]
         self.headers = {
@@ -195,7 +195,7 @@ class KY_Eyepetizer():  # 开眼
         print("【开眼 Eyepetizer】: {}.mp4 无水印视频下载完成！".format(video_name))
 
 
-class KS():  # 快手
+class KS:  # 快手
     def __init__(self, s_url):
         self.s_url = s_url.replace('\n', '')
         self.url = re.findall('(https?://[^\s]+)', s_url)[0]  # 正则提取字符串中的链接
@@ -268,7 +268,7 @@ class KS():  # 快手
                 print("【快手】: {}.mp4 无水印视频下载完成！".format(video_name))
 
 
-class DY_HSB():
+class DY_HSB:
     headers = {  # 模拟手机
         'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 Edg/84.0.4147.105'
     }
@@ -317,7 +317,7 @@ class DY_HSB():
                 print("【火山极速版】: 用户 {} 的无水印视频下载完成！".format(user_name))
 
 
-class ZY():  # 最右
+class ZY:  # 最右
     headers = {  # 模拟成手机
         'Host': 'share.izuiyou.com',
         'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 Edg/84.0.4147.105'
@@ -390,7 +390,7 @@ class ZY():  # 最右
             print("【最右】: 类型 【{}】 无水印视频下载完成！".format(type_name))
 
 
-class VUE():  # VUEvlog
+class VUE:  # VUEvlog
     headers = {
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36 Edg/84.0.522.59'
     }
@@ -433,7 +433,7 @@ class VUE():  # VUEvlog
             print("【VUE】: 类型 【{}】 无水印视频下载完成！".format(topics_name))
 
 
-class KKSP():
+class KKSP:
     def __init__(self, s_url):
         self.moviesId = str(s_url).split('=')[-1]
         self.headers = {
