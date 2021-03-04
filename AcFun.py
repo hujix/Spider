@@ -4,7 +4,7 @@ import json
 import requests
 from tqdm import tqdm
 
-path = 'C:/Users/Jackson-art/Desktop/'
+path = './Desktop/'
 
 rep = requests.get('https://ip.jiangxianli.com/api/proxy_ip', verify=False)
 proxy = {'HTTP': 'http://' + rep.json()['data']['ip'] + ':' + rep.json()['data']['port']}

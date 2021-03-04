@@ -9,7 +9,7 @@ import time
 
 
 def msg(name):
-    url = 'https://qmsg.zendee.cn/send/6c44a7d4e24fa396f199fd950e123e54?msg=' + quote(name)
+    url = 'https://qmsg.zendee.cn/send/*****?msg=' + quote(name)
     r = requests.get(url)
     print(r.json()['reason'])
 
@@ -24,7 +24,7 @@ def getAttrs():
 
 def get_verCode(base64_str):
     img = base64.b64decode(base64_str)
-    resp = requests.post('http://yzm.qxp.red', data=img)
+    resp = requests.post('http://*****.red', data=img)
     code = resp.json()['code']
     return code
 
@@ -86,7 +86,7 @@ class tem():
     def __init__(self, uid):
         self.header1 = {
             'origin': 'https://wxyqfk.zhxy.net',
-            'referer': 'https://wxyqfk.zhxy.net/?yxdm=13668',
+            'referer': 'https://wxyqfk.zhxy.net/?yxdm=*****',
             'sign': getAttrs()[1],
             'timestamp': getAttrs()[0],
             'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 Edg/85.0.564.68'
