@@ -19,6 +19,7 @@
 | DuiTang.py | 一个有好看的图片的网站：[【堆糖】](https://www.duitang.com/) <br> 直接从搜索的接口开始解析的。 |
 | Emoji.py | 一个有大量表情包的网站：[【发表情】](https://www.fabiaoqing.com/) <br> 提供三种选择方式：1.热门表情 2.获取菜单 3.搜索下载|
 | Emoji-GUI.py | 利用 **tkinter** 编写的表情包界面版。<br> **该项目写了一大半了，还未收尾~** |
+| GuShiWen.py | [古诗文网](https://www.gushiwen.cn/) 登录验证码破解 |
 | Haokan.py | 一个短视频网站：[【好看视频】](https://haokan.baidu.com/) |
 | IP-Post.py | 一个提供免费 **代理IP** 的网站：[【快代理】](https://www.kuaidaili.com/free/) <br>其实可以更改为数据库版的，用的时候方便点。<br> CSDN博文地址：[Python爬虫：自建IP地址池](https://blog.csdn.net/qq_44700693/article/details/105846658)|
 | JiJianBZ.py | 一个 **非常良心** 的壁纸网站，壁纸原图不限量下载：[【极简壁纸】](https://bz.zzzmh.cn/) <br> 这个项目涉及到了一点点 **JS逆向**。 |

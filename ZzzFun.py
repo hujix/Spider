@@ -16,7 +16,8 @@ class Download:
     m3u8_headers = {
         'Host': 'service-agbhuggw-1259251677.gz.apigw.tencentcs.com',
         'Connection': 'keep-alive',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36 Edg/86.0.622.69',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                      'Chrome/86.0.4240.198 Safari/537.36 Edg/86.0.622.69',
         'Accept': '*/*',
         'Origin': 'null',
         'Sec-Fetch-Site': 'cross-site',
@@ -30,7 +31,7 @@ class Download:
         """
         :param name: 视频名
         :param m3u8_url: 视频的 m3u8文件 地址
-        :param path: 下载地址
+        :param download_path: 下载地址
         """
         self.video_name = name
         self.path = download_path
@@ -51,7 +52,8 @@ class Download:
             video_headers = {
                 'Host': re.findall("https://(.*?)/obj/", str(url))[0],
                 'Connection': 'keep-alive',
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36 Edg/86.0.622.69',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                              'Chrome/86.0.4240.198 Safari/537.36 Edg/86.0.622.69',
                 'Accept': '*/*',
                 'Origin': 'http://www.zzzfun.com',
                 'Sec-Fetch-Site': 'cross-site',
