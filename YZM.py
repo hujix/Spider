@@ -1,0 +1,16 @@
+import base64
+import logging
+
+import ddddocr
+
+# ocr = ddddocr.DdddOcr()
+# with open('1.jpg', 'rb') as f:
+#     img_bytes = f.read()
+# res = ocr.classification(img_bytes)
+# print(res)
+
+
+_s = "iVBORw0KGgoAAAANSUhEUgAAAFAAAAAeCAYAAAC7Q5mxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJlSURBVGhD7ZdBboMwEEW5WbZIPUelHoBb9AossukRWLOq1AN01w3qASLlBPTbzJBhyhDjCd3UTxopxAm2H2OPqcaCiyLQSRHopAh0UgSm8gZVHAIlcBjHGl9VOhpqB81Ke4v/Hc21XU6iw3UOQ4spVhg2RdNTg0L2FcLAaGGRdfz4ixbfB3F15iT28o0HqCcUQzzYFII8jHmeUt/cJOp7J2L8kgWuDRCdBXl/kXUR9NOhv2+6DMhsfDcy6BfD2DZCHv1/eJ4yMfUuGtxlDUsgycvtLYcgS8pjWGLqUmbhHMSA1VRhnscLRPqbS3qDvnnFAEU0X9TiBVMOIqwMNIQt6bGlV6O1DaZg3FkJxF6xvpy3meR1t6fbd1Fi3V7oCwecgZydScIEVEw88gJGT0IgV93de94FtQYC6w+RtF+43YOycK+wGeyFmNtchY/NQEQTso8+ewrH8IFbZi5jLSsGtpMrtWfSIzkmiXX21DCSNVggLdu4/4VrxN7HRct2ysTEDNSyFmBsuio7mIpIhW0lz6AeHaEEBqTExPPf0J6jvJtzQ+CmMMUnMu9B8iamQmIeqO9gjHZFYASdsMR7RYWX7EIWCXw6pQuTBHmfeZliMwk8PgNnuM1qJ0hgrLizrFPaEl7DkhfeUjwZGavxYedA49wXjzWhnUL3LmVVL9RMVZkFQnCbOuogb34IOu6sBIaOLctD88PPgTK7ZIhBankyeFIMF5AYZ1Q6IXFxvNlgUx5iz6sc5iaPL543EAYjyEBP4h+TPvsibJViw0kR6KQIdFIEOikCnRSBTopAJ0WgkyLQxTj+APthkBRqcOQRAAAAAElFTkSuQmCC "
+ocr = ddddocr.DdddOcr()
+res = ocr.classification(base64.b64decode(_s))
+print(res)
