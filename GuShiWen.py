@@ -5,7 +5,7 @@ from lxml import etree
 
 class GuShiWen:
     def __init__(self):
-        self.see=requests.session()
+        self.see = requests.session()
         self.url = "https://so.gushiwen.cn/user/login.aspx?from=http://so.gushiwen.cn/user/collect.aspx"
         self.login_headers = {
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',

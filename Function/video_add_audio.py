@@ -1,7 +1,7 @@
 import os
 
 
-def video_add_mp3(ffmpeg_path, save_path, m4s_file1_path, m4s_file2_path):
+def video_add_audio(ffmpeg_path, save_path, m4s_file1_path, m4s_file2_path):
     """
     ffmpeg -i video.mp4 -i audio.m4a -c:v copy -c:a copy output.mp4
      视频添加音频
